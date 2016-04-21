@@ -1,0 +1,126 @@
+/**body {
+  background-color: $bg_color;
+  color: $color;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  text-align: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  justify-content: space-around;
+
+  p {
+    text-align: center;
+  }
+}
+
+.cl-1 {
+  background: red;
+  display: flex;
+  justify-content: space-around;
+  order: 4;
+  flex-flow: column-reverse;
+  flex:1;
+
+  p {
+    flex-grow: 1;
+  }
+}
+
+.cl-2 {
+  background: lightskyblue;
+  order:1;
+  flex:1;
+  display: flex;
+  flex-flow:row;
+  justify-content: space-around;
+}
+
+.cl-3 {
+  background-color: crimson;
+  order:3;
+  flex:1;
+}
+
+.cl-4 {
+  background: yellowgreen;
+  order:2;
+  flex:1;
+}
+.col {
+  margin: 1% 5px;
+}**/
+$bg_color: #000;
+$color: #fff;
+$box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+body {
+  background: #3C3F50;
+  color: $color;
+  margin: 0;
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  margin: 20px 15%;
+  position: relative;
+  width: 70%;
+  background: #ffffff;
+  color: #444;
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  font-weight: normal;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 10px 0 50px;
+
+  &:before, &:after {
+    width: 95%;
+    top: 100%;
+    content: '';
+    position: absolute;
+    color: #000;
+    background: #fff;
+    border: 1px solid #ccc;
+    height: 10px;
+    border-top: 0;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px;
+  }
+  &:before {
+    width: 88%;
+    top: calc(100% + 8px);
+  }
+  .bg-top {
+    background: #3C3F50;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    border: 1px solid #3C3F50;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    top: 0;
+    left: -1px;
+  }
+  h2 {
+    position: relative;
+    margin-top: 5em;
+    z-index: 2;
+  }
+}
