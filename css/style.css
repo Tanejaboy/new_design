@@ -54,37 +54,32 @@
   margin: 1% 5px;
 }**/
 body {
-    background: #3C3F50;
-    color: white;
-    margin: 0;
-    display: flex;
-}
+  background: #3C3F50;
+  color: white;
+  margin: 0; }
 
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 .profile {
-    margin: 20px 15%;
-    position: relative;
-    width: 70%;
-    background: #ffffff;
-    color: #444;
-    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    font-weight: normal;
-    text-align: center;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    border-top: none;
-    padding: 10px 0 50px;
-}
-
-.profile:before, .profile:after {
+  margin: 20px 15%;
+  position: relative;
+  width: 70%;
+  background: #ffffff;
+  color: #444;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 10px 0 50px; }
+  .profile:before, .profile:after {
     width: 95%;
     top: 100%;
     content: '';
@@ -98,15 +93,11 @@ body {
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 10px 10px;
-}
-
-.profile:before {
+    border-radius: 0 0 10px 10px; }
+  .profile:before {
     width: 88%;
-    top: calc(100% + 8px);
-}
-
-.profile .bg-top {
+    top: calc(100% + 8px); }
+  .profile .bg-top {
     background: #3C3F50;
     width: 100%;
     height: 100px;
@@ -115,11 +106,19 @@ body {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     top: 0;
-    left: -1px;
-}
-
-.profile h2 {
+    left: -1px; }
+  .profile h2 {
     position: relative;
     margin-top: 5em;
-    z-index: 2;
-}
+    z-index: 2; }
+
+.column {
+  display: flex;
+  justify-content: space-around; }
+  .column .education {
+    color: #444;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); }

@@ -61,7 +61,6 @@ body {
   background: #3C3F50;
   color: $color;
   margin: 0;
-  display: flex;
 }
 
 * {
@@ -122,5 +121,19 @@ body {
     position: relative;
     margin-top: 5em;
     z-index: 2;
+  }
+}
+
+.column {
+  display: flex;
+  justify-content: space-around;
+
+  .education {
+    color: #444;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow:  $box-shadow;
+    box-shadow:  $box-shadow;
   }
 }
