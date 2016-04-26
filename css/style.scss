@@ -53,13 +53,14 @@
 .col {
   margin: 1% 5px;
 }**/
-$bg_color: #000;
-$color: #fff;
-$box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+@import "color";
+@import "variable";
+@import "navbar";
 
 body {
   background: #3C3F50;
-  color: $color;
+  color: #fff;
   margin: 0;
 }
 
@@ -69,7 +70,7 @@ body {
 }
 
 .profile {
-  margin: 20px 15%;
+  margin: 10% 15% 5%;
   position: relative;
   width: 70%;
   background: #ffffff;
@@ -124,16 +125,43 @@ body {
   }
 }
 
+.small-row {
+  color: #444;
+  background: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  padding: 10px 20px;
+  border-radius: 10px;
+  align-self: auto;
+  margin: 10px;
+  flex-basis: 25%;
+}
+
 .column {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
 
   .education {
-    color: #444;
-    background: #ffffff;
-    border: 1px solid #ccc;
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow:  $box-shadow;
-    box-shadow:  $box-shadow;
+    @extend .small-row;
+    flex-grow: 0;
   }
+
+  .skills {
+    @extend .small-row;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 20px;
+  padding: 0 10px;
+  border-bottom: $heading_border-bottom;
+  margin-bottom: 10px;
 }
